@@ -1,17 +1,17 @@
 #include <stdio.h>
-void F1(int V1, char V8[], int V3, int V7) {
-   printf("a: %d %c %d\n", V1, V8[V7], V3);
+void F1(int V1, char *V2, int V3) {
+   printf("a: %d %c %d\n", V1, *V2, V3);     // User thinks %s prints the first character of a string
    int V4 = (V1 / V3) + V3;
-   char V5 = V8[V7 - V1 - 1];
-   int V6 = (int)V8[V7] / (int)V8[V7];
-   printf("b: %d %c %d\n", V4, V5, V6);
+   char **V5 = &V2 - V1;                     // User thinks V5 references V2 directly
+   V2 = V2 - 1;
+   int V6 = (int)V2 / (int)V2;
+   printf("b: %d %c %d\n", V4, **V5, V6);    // User thinks %s prints the first character of a string
 }
 int V7;
-char V8[] = "zy";
 int main() {
    for (; "ab"[V7] != 0;) {
-      F1(97 - 97, V8, 122 / 122, V7);
+      F1(97 - 97, V7 + "zy", 122 / 122);
       V7 = V7 + 1;
    }
-   //printf("c\n");
+   //printf("c\n");                          // User forgot to come back out to the outter function after executing F1 the second time
 }
