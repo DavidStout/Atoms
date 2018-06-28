@@ -22,7 +22,7 @@ void for_loop_cond2_C()
 
 void for_loop_cond3_C()
 {
-    float var = 0;
+    float var = 0.0;
     for(;var != 1;)
     {    
         printf("%f\n", var);
@@ -48,7 +48,7 @@ void for_loop_cond2_NC()
 
 void for_loop_cond3_NC()
 {
-    for(float var = 0; var != 1; var++)
+    for(float var = 0.0; var != 1; var++)
     {
         printf("%f\n", var);
     }
