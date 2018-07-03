@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int var;
-double var2;
+float var2;
 char var3;
 
 void global_variable_C()
