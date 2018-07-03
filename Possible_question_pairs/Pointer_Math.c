@@ -7,29 +7,32 @@ void pointer_math_C()
 }
 void pointer_math2_C()
 {
-    int *var = 1 + "54";
+    char *var = 1 + "54";
     printf("%s\n", var);
 }
 void pointer_math3_C()
 {
-    float *var = 1 + "68";
+    char *var = 1 + "68";
     printf("%s\n", var);
 }
 
 void pointer_math_NC()
 {
-    char *var = &"zy"[1];
-    printf("%s\n", var);
+    char var[2] = {'z','y'};
+	char var2 = var[1];
+    printf("%c\n", var2);
 }
 void pointer_math2_NC()
 {
-    int *var = &"54"[1];
-    printf("%s\n", var);
+    char var[2] = {'5','4'};
+	char var2 = var[1];
+    printf("%c\n", var2);
 }
 void pointer_math3_NC()
 {
-    float *var = &"68"[1];
-    printf("%s\n", var);
+    char var[2] = {'6','8'};
+	char var2 = var[1];
+    printf("%c\n", var2);
 }
 int main()
 {
