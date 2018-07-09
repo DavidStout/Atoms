@@ -1,22 +1,9 @@
 #include <stdio.h>
 
 int var;
-float var2;
-char var3;
-
 void global_variable_C()
 {
     printf("%d\n", var);
-}
-
-void global_variable2_C()
-{
-    printf("%f\n", var2);
-}
-
-void global_variable3_C()
-{
-    printf("%d\n", var3);
 }
 
 void global_variable_NC()
@@ -25,10 +12,22 @@ void global_variable_NC()
     printf("%d\n", var);
 }
 
+float var2;
+void global_variable2_C()
+{
+    printf("%f\n", var2);
+}
+
 void global_variable2_NC()
 {
     var2 = 0.0;
     printf("%f\n", var2);
+}
+
+char var3;
+void global_variable3_C()
+{
+    printf("%d\n", var3);
 }
 
 void global_variable3_NC()
