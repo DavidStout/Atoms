@@ -20,35 +20,35 @@ void for_loop_cond_NC()
 
 void for_loop_cond2_C()
 {
-    char var = 'a';
-    for(;var != 'b';)
+    int var = 0;
+    for(;var <= 0;)
     {    
-        printf("%c\n", var);
+        printf("%d\n", var);
         var = var + 1;
     }
 }
 
 void for_loop_cond2_NC()
 {
-    for(char var = 'a'; var != 'b'; var = var + 1)
+    for(int var = 0; var <= 0; var = var + 1)
     {
-        printf("%c\n", var);
+        printf("%d\n", var);
     }
 }
 
 void for_loop_cond3_C()
 {
-    int var = 2;
-    for(;var != 4;)
+    int var = 0;
+    for(;var < 1;)
     {    
         printf("%d\n", var);
-        var = var + 2;
+        var = var + 1;
     }
 }
 
 void for_loop_cond3_NC()
 {
-    for(int var = 2; var != 4; var = var + 2)
+    for(int var = 0; var < 1; var = var + 1)
     {
         printf("%d\n", var);
     }
