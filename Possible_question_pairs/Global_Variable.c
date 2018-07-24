@@ -1,6 +1,12 @@
 #include <stdio.h>
 
 int var;
+int var_NC = 0;
+float var2;
+float var2_NC = 0.0;
+char var3;
+char var3_NC = 0;
+
 void global_variable_C()
 {
     printf("%d\n", var);
@@ -8,11 +14,9 @@ void global_variable_C()
 
 void global_variable_NC()
 {
-    var = 0;
-    printf("%d\n", var);
+    printf("%d\n", var_NC);
 }
 
-float var2;
 void global_variable2_C()
 {
     printf("%f\n", var2);
@@ -20,11 +24,9 @@ void global_variable2_C()
 
 void global_variable2_NC()
 {
-    var2 = 0.0;
-    printf("%f\n", var2);
+    printf("%f\n", var2_NC);
 }
 
-char var3;
 void global_variable3_C()
 {
     printf("%d\n", var3);
@@ -32,8 +34,7 @@ void global_variable3_C()
 
 void global_variable3_NC()
 {
-    var3 = 0;
-    printf("%d\n", var3);
+    printf("%d\n", var3_NC);
 }
 
 int main()
