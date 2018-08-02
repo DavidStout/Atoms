@@ -2,34 +2,42 @@
 
 void string_literal_C()
 {
-    printf("%c\n", "abcd"[2]);
+	char *var = "abcd";
+    printf("%c\n", var[2]);
 }
 
 void string_literal_NC()
 {
-    char var[4] = "abcd";
+    char var[5] = "abcd";
     printf("%c\n", var[2]);
 }
 
 void string_literal2_C()
 {
-    printf("%c\n", "1234"[2]);
+	char *var = "1234";
+    printf("%c\n", var[2]);
 }
 
 void string_literal2_NC()
 {
-    char var[4] = "1234";
+    char var[5] = {'1','2','3','4', 0};
     printf("%c\n", var[2]);
 }
 
 void string_literal3_C()
 {
-    printf("%c\n", "1a6b"[2]);
+	char *var = "1a6b";
+    printf("%c\n", var[2]);
 }
 
 void string_literal3_NC()
 {
-    char var[4] = "1a6b";
+    char var[5];
+	var[0] = '1';
+	var[1] = 'a';
+	var[2] = '6';
+	var[3] = 'b';
+	var[4] = 0;
     printf("%c\n", var[2]);
 }
 
