@@ -18,6 +18,39 @@ void char_equals_ASCII_NC()
 
 void char_equals_ASCII2_C()
 {
+    char var = '3';
+	char var2 = '5';
+	int var3 = var2 - var;
+    printf("%d\n", var3);
+}
+
+void char_equals_ASCII2_NC()
+{
+    char var = 51;
+	char var2 = 53;
+	int var3 = var2-var;
+    printf("%d\n", var3);
+}
+
+void char_equals_ASCII3_C()
+{
+    char var = 'e';
+	char var2 = 'f';
+	int var3 = var2 - var;
+    printf("%d\n", var3);
+}
+
+void char_equals_ASCII3_NC()
+{
+    char var = 101;
+	char var2 = 102;
+	int var3 = var2-var;
+    printf("%d\n", var3);
+}
+
+/*
+void char_equals_ASCII2_C()
+{
     char var = 97;
 	printf("%c\n", var);
 }
@@ -41,7 +74,7 @@ void char_equals_ASCII3_NC()
 	char var2 = var + 1;
 	printf("%c\n", var2);
 }
-
+*/
 int main()
 {
     printf("a: ");
