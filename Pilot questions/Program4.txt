@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{
+    char var = 51;
+    char var2 = 53;
+    int var3 = var2-var;
+    printf("%d\n", var3);
+}
