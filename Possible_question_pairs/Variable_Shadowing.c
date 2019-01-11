@@ -3,6 +3,7 @@
 void Variable_Shadowing_C1()
 {
     int V1 = 4;
+    if(1)
     {
         int V1 = 1;
         V1++;
@@ -14,6 +15,7 @@ void Variable_Shadowing_C1()
 void Variable_Shadowing_NC1()
 {
     int V1 = 4;
+    if(1)
     {
         int V2 = 1;
         V2++;
@@ -48,22 +50,24 @@ void Variable_Shadowing_NC2()
 void Variable_Shadowing_C3()
 {
     int V1 = 10;
+    do
     {
         int V1 = 1;
         V1++;
         printf("a: %d\n", V1);
-    }
+    }while(0);
     printf("b: %d\n", V1);
 }
 
 void Variable_Shadowing_NC3()
 {
     int V1 = 10;
+    do
     {
         int V2 = 1;
         V2++;
         printf("c: %d\n", V2);
-    }
+    }while(0);
     printf("d: %d\n", V1);
 }
 int main(void)
