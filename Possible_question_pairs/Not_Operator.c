@@ -9,53 +9,53 @@ void Not_Operator_C1()
 void Not_Operator_NC1()
 {
     int V2 = 1;
-    if (V2==1)
-    {
-        V2 = 0;
-    }
-    else if (V2==0)
+    if (V2==0)
     {
         V2 = 1;
+    }
+    else
+    {
+        V2 = 0;
     }
     printf("b: %d\n", V2);
 }
 
 void Not_Operator_C2()
 {
-    int V1 = !0;
+    int V1 = !-1;
     printf("a: %d\n", V1);
 }
 
 void Not_Operator_NC2()
 {
-    int V2 = 0;
-    if (V2==1)
-    {
-        V2 = 0;
-    }
-    else if (V2==0)
+    int V2 = -1;
+    if (V2==0)
     {
         V2 = 1;
+    }
+    else 
+    {
+        V2 = 0;
     }
     printf("b: %d\n", V2);
 }
 
 void Not_Operator_C3()
 {
-    int V1 = !1;
+    int V1 = !0;
     printf("a: %d\n", V1);
 }
 
 void Not_Operator_NC3()
 {
     int V2 = 0;
-    if (V2==1)
-    {
-        V2 = 0;
-    }
-    else if (V2==0)
+    if (V2==0)
     {
         V2 = 1;
+    }
+    else 
+    {
+        V2 = 0;
     }
     printf("b: %d\n", V2);
 }
