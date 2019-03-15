@@ -2,9 +2,11 @@
 
 void Code_Block_C1(){
     {
-    if(1){
-    printf("b");}
-    printf("b");}
+        if(1){
+            printf("b");
+	    }
+        printf("b");
+	}
 }
 
 void Code_Block_NC1(){
@@ -16,9 +18,11 @@ void Code_Block_NC1(){
 
 void Code_Block_C2(){
     {
-    if(0){
-    printf("b");}
-    printf("b");}
+        if(0){
+            printf("b");
+        }
+        printf("b");
+    }
 }
 
 void Code_Block_NC2(){
@@ -30,12 +34,15 @@ void Code_Block_NC2(){
 
 void Code_Block_C3(){
     {
-    if(1){
-    printf("b");
-	if(0){
-    printf("b");}
-    printf("b");}
-    printf("b");}
+        if(1){
+            printf("b");
+	        if(0){
+                printf("b");
+            }
+            printf("b");
+	    }
+        printf("b");
+    }
 }
 
 void Code_Block_NC3(){
