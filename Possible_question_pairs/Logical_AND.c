@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-void logical_AND_C1(int i, int j){
-    if((i == 1)&&(j == 1)){
+void logical_AND_C1(int V1, int V2){
+    if((V1 == 1)&&(V2 == 1)){
         printf("True\n");
     }
     else
         printf("false\n");
 }
 
-void logical_AND_NC1(int i, int j){
-    if(i == 1){
-        if(j == 1){
+void logical_AND_NC1(int V1, int V2){
+    if(V1 == 1){
+        if(V2 == 1){
             printf("True\n");
         }
         else
@@ -20,17 +20,17 @@ void logical_AND_NC1(int i, int j){
         printf("false\n");
 }
 
-void logical_AND_C2(int i, int j){
-    if((i == 2)&&(j == 1)){
+void logical_AND_C2(int V1, int V2){
+    if((V1 == 2)&&(V2 == 1)){
         printf("True\n");
     }
     else
         printf("false\n");
 }
 
-void logical_AND_NC2(int i, int j){
-    if(i == 2){
-        if(j == 1){
+void logical_AND_NC2(int V1, int V2){
+    if(V1 == 2){
+        if(V2 == 1){
             printf("True\n");
         }
         else
@@ -40,17 +40,17 @@ void logical_AND_NC2(int i, int j){
         printf("false\n");
 }
 
-void logical_AND_C3(int i, int j){
-    if((i < 1)&&(j > 1)){
+void logical_AND_C3(int V1, int V2){
+    if((V1 < 1)&&(V2 > 1)){
         printf("True\n");
     }
     else
         printf("false\n");
 }
 
-void logical_AND_NC3(int i, int j){
-    if(i < 1){
-        if(j > 1){
+void logical_AND_NC3(int V1, int V2){
+    if(V1 < 1){
+        if(V2 > 1){
             printf("True\n");
         }
         else

@@ -1,34 +1,34 @@
 #include <stdio.h>
 
-int var;
-int var_NC = 0;
-float var2;
-float var2_NC = 0.0;
-char var3;
-char var3_NC = 0;
+int V1;
+int V1_NC = 0;
+float V2;
+float V2_NC = 0.0;
+char V3;
+char V3_NC = 0;
 
 void global_variable_C(){
-    printf("%d\n", var);
+    printf("%d\n", V1);
 }
 
 void global_variable_NC(){
-    printf("%d\n", var_NC);
+    printf("%d\n", V1_NC);
 }
 
 void global_variable2_C(){
-    printf("%f\n", var2);
+    printf("%f\n", V2);
 }
 
 void global_variable2_NC(){
-    printf("%f\n", var2_NC);
+    printf("%f\n", V2_NC);
 }
 
 void global_variable3_C(){
-    printf("%d\n", var3);
+    printf("%d\n", V3);
 }
 
 void global_variable3_NC(){
-    printf("%d\n", var3_NC);
+    printf("%d\n", V3_NC);
 }
 
 int main(){

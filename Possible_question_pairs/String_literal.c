@@ -1,36 +1,36 @@
 #include <stdio.h>
 
 void string_literal_C(){
-    int var = 2;
-    printf("%c\n", "abcd"[var]);
+    int V1 = 2;
+    printf("%c\n", "abcd"[V1]);
 }
 
 void string_literal_NC(){
-    char *var = "abcd";
-    int var2 = 2;
-    printf("%c\n", var[var2]);
+    char *V1 = "abcd";
+    int V2 = 2;
+    printf("%c\n", V1[V2]);
 }
 
 void string_literal2_C(){
-    int var = 2;  
-    printf("%c\n", "1234"[var]);
+    int V1 = 2;  
+    printf("%c\n", "1234"[V1]);
 }
 
 void string_literal2_NC(){
-    char *var = "1234";
-    int var2 = 2;
-    printf("%c\n", var[var2]);
+    char *V1 = "1234";
+    int V2 = 2;
+    printf("%c\n", V1[V2]);
 }
 
 void string_literal3_C(){
-    int var = 2;
-    printf("%c\n", "1a6b"[var]);
+    int V1 = 2;
+    printf("%c\n", "1a6b"[V1]);
 }
 
 void string_literal3_NC(){
-    char *var = "1a6b";
-    int var2 = 2;
-    printf("%c\n", var[var2]);
+    char *V1 = "1a6b";
+    int V2 = 2;
+    printf("%c\n", V1[V2]);
 }
 
 int main(){

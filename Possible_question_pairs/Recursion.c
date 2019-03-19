@@ -12,41 +12,41 @@ void recursion_C1(int V2){
     }
 }
 
-void recursion_NC1(int V3){
-    while(V3 < 2){
-        F1(V3);
-        V3++;
+void recursion_NC1(int V2){
+    while(V2 < 2){
+        F1(V2);
+        V2++;
     }
 }
 
-void recursion_C2(int V4){
-    if(V4 <= 2){
-        printf("c: %d\n", V4);
-        V4++;
-        recursion_C2(V4);
+void recursion_C2(int V2){
+    if(V2 <= 2){
+        printf("c: %d\n", V2);
+        V2++;
+        recursion_C2(V2);
     }
 }
 
-void recursion_NC2(int V5){
-    while(V5 <= 2){
-        F1(V5);
-        V5++;
+void recursion_NC2(int V2){
+    while(V2 <= 2){
+        F1(V2);
+        V2++;
     }
 }
 
 
-void recursion_C3(int V6){
-    if(V6 > 0){
-        printf("e: %d\n", V6);
-        V6--;
-        recursion_C3(V6);
+void recursion_C3(int V2){
+    if(V2 > 0){
+        printf("e: %d\n", V2);
+        V2--;
+        recursion_C3(V2);
     }
 }
 
-void recursion_NC3(int V7){
-    while(V7 > 0){
-        F1(V7);
-        V7--;
+void recursion_NC3(int V2){
+    while(V2 > 0){
+        F1(V2);
+        V2--;
     }
 }
 
