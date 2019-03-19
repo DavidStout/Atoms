@@ -48,9 +48,9 @@ void Code_Block_C3(){
 void Code_Block_NC3(){
     if(1){
         printf("a");
-		if(0){
+        if(0){
             printf("a");
-		    }
+        }
         printf("a");    
     }
     printf("a");
