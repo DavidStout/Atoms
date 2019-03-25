@@ -3,42 +3,42 @@
 void for_loop_cond_C(){
     int V1 = 0;
     for(;V1 != 1;){    
-        printf("%d\n", V1);
+        printf("%d ", V1);
         V1 = V1 + 1;
     }
 }
 
 void for_loop_cond_NC(){
     for(int V1 = 0; V1 != 1; V1 = V1 + 1){
-        printf("%d\n", V1);
+        printf("%d ", V1);
     }
 }
 
 void for_loop_cond2_C(){
     int V1 = 0;
     for(;V1 <= 0;){    
-        printf("%d\n", V1);
+        printf("%d ", V1);
         V1 = V1 + 1;
     }
 }
 
 void for_loop_cond2_NC(){
     for(int V1 = 0; V1 <= 0; V1 = V1 + 1){
-        printf("%d\n", V1);
+        printf("%d ", V1);
     }
 }
 
 void for_loop_cond3_C(){
     int V1 = 0;
     for(;V1 < 1;){    
-        printf("%d\n", V1);
+        printf("%d ", V1);
         V1 = V1 + 1;
     }
 }
 
 void for_loop_cond3_NC(){
     for(int V1 = 0; V1 < 1; V1 = V1 + 1){
-        printf("%d\n", V1);
+        printf("%d ", V1);
     }
 }
 
