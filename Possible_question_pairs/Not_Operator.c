@@ -24,7 +24,6 @@ void Not_Operator_C2(){
 
 void Not_Operator_NC2(){
     int V2 = -1;
-    V2 = !V2;
     if (V2==0){
         V2 = 1;
     }
