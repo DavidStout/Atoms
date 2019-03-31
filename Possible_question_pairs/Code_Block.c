@@ -13,8 +13,10 @@ void Code_Block_NC1(){
 }
 
 void Code_Block_C2(){
-    if(1){
-        printf("a");
+    {
+        {
+            printf("a");
+        }
     }
     printf("b");
 }
@@ -25,13 +27,15 @@ void Code_Block_NC2(){
 }
 
 void Code_Block_C3(){
-    if(0){
+    printf("a");
+	{
         printf("a");
     }
     printf("b");
 }
 
 void Code_Block_NC3(){
+    printf("a");
     printf("a");
     printf("b");
 }
